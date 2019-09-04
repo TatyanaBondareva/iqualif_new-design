@@ -14,6 +14,152 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
+<header class="header">
+    <div class="header__menu-wrapper">
+        <div class="container container_header">
+            <div class="header__form-phone">
+                <span>Appelez-nous au:</span>
+                <a href="tel: #">+70000000</a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Contact us</a></li>
+                <li class="header__menu-item header__menu-item_sublist"><a
+                        class="header__menu-link header__menu-link_list js-header-menu-link-list js-header-menu-link-lang"
+                        href="#">English</a>
+                    <ul class="header__menu-sublist" style="display: none">
+
+                        <li class="header__menu-sublist-item"><a href="#"
+                                                                 class="header__menu-sublist-link js-header-menu-sublist-lang"
+                                                                 data-lang="English">English</a>
+                        </li>
+
+                        <li class="header__menu-sublist-item"><a href="#"
+                                                                 class="header__menu-sublist-link js-header-menu-sublist-lang"
+                                                                 data-lang="Russian">Russian</a>
+                        </li>
+
+                        <li class="header__menu-sublist-item"><a href="#"
+                                                                 class="header__menu-sublist-link js-header-menu-sublist-lang"
+                                                                 data-lang="Français">Français</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="header__menu-item header__menu-item_sublist"><a
+                        class="header__menu-link header__menu-link_list js-header-menu-link-list" href="#">Currency:
+                    <span class="js-header-menu-link-currency">EUR</span></a>
+                    <ul class="header__menu-sublist" style="display: none">
+
+                        <li class="header__menu-sublist-item"><a href="#"
+                                                                 class="header__menu-sublist-link js-header-menu-sublist-link"
+                                                                 data-currency="EUR">Euro (EUR)</a>
+                        </li>
+
+                        <li class="header__menu-sublist-item"><a href="#"
+                                                                 class="header__menu-sublist-link js-header-menu-sublist-link"
+                                                                 data-currency="USD">Dollar (USD)</a>
+                        </li>
+
+                        <li class="header__menu-sublist-item"><a href="#"
+                                                                 class="header__menu-sublist-link js-header-menu-sublist-link"
+                                                                 data-currency="RUB">Rubble (RUB)</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Sing in</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container header__container">
+        <ul class="mobile-menu" id="openMenu">
+
+            <li class="mobile-menu__item"></li>
+
+            <li class="mobile-menu__item"></li>
+
+            <li class="mobile-menu__item"></li>
+
+        </ul>
+        <a href="#" class="logo"></a>
+        <form class="search-form" name="search-form">
+            <input type="search" class="search-form__input" placeholder="Search">
+            <input type="submit" class="search-form__button" value="">
+        </form>
+        <div class="cart__wrapper">
+            <span class="cart__title">Cart</span>
+            <span class="cart__count">(empty)</span>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="main-menu">
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link">buy</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#" class="main-menu__link">title in the menu2</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="mobile-list mobile-list_hiden" id="headerMobileMenu">
+    <div class="mobile-list__close-wrapper">
+        <button class="mobile-list__close" id="closeMenu"></button>
+    </div>
+    <ul class="mobile-list__wrapper">
+        <li class="mobile-list__item header__menu-item_sublist"><a
+                class="list-link header__menu-link_list js-header-menu-link-list js-header-menu-link-lang"
+                href="#">English</a>
+            <ul class="header__menu-sublist" style="display: none">
+
+                <li class="header__menu-sublist-item"><a href="#"
+                                                         class="header__menu-sublist-link js-header-menu-sublist-lang"
+                                                         data-lang="English">English</a>
+                </li>
+
+                <li class="header__menu-sublist-item"><a href="#"
+                                                         class="header__menu-sublist-link js-header-menu-sublist-lang"
+                                                         data-lang="Russian">Russian</a>
+                </li>
+
+                <li class="header__menu-sublist-item"><a href="#"
+                                                         class="header__menu-sublist-link js-header-menu-sublist-lang"
+                                                         data-lang="Français">Français</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="mobile-list__item"><a class="list-link" href="#">Contact us</a></li>
+        <li class="mobile-list__item header__menu-item_sublist"><a
+                class="list-link header__menu-link_list js-header-menu-link-list" href="#">Currency:
+            <span class="js-header-menu-link-currency">EUR</span></a>
+            <ul class="header__menu-sublist" style="display: none">
+
+                <li class="header__menu-sublist-item"><a href="#"
+                                                         class="header__menu-sublist-link  js-header-menu-sublist-link"
+                                                         data-currency="EUR">Euro (EUR)</a>
+                </li>
+
+                <li class="header__menu-sublist-item"><a href="#"
+                                                         class="header__menu-sublist-link  js-header-menu-sublist-link"
+                                                         data-currency="USD">Dollar (USD)</a>
+                </li>
+
+                <li class="header__menu-sublist-item"><a href="#"
+                                                         class="header__menu-sublist-link  js-header-menu-sublist-link"
+                                                         data-currency="RUB">Rubble (RUB)</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="mobile-list__item"><a class="list-link" href="#">Sing in</a></li>
+    </ul>
+    <ul class="mobile-list__wrapper">
+        <li class="mobile-list__item"><a class="list-link" href="#">buy</a></li>
+        <li class="mobile-list__item"><a class="list-link" href="#">title in the menu2</a></li>
+    </ul>
+</div>
+</body>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
