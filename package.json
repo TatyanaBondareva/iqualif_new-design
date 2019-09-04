@@ -1,0 +1,31 @@
+{
+  "name": "iqualif",
+  "version": "0.0.1",
+  "description": "Simple project template with LESS, Autoprefixer and livereload.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dev": "gulp",
+    "prod": "gulp prod"
+  },
+  "author": "Tanya Bondareva",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.8.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-less": "^4.0.1",
+    "gulp-ejs": "^3.3.0",
+    "stylelint": "^9.7.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-util": "*"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "native": "^0.3.3",
+    "natives": "^1.1.6",
+    "normalize.css": "^8.0.0"
+  }
+}
