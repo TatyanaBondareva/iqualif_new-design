@@ -65,3 +65,10 @@ function toggleLinks() {
         }
     }
 }
+
+$('.js-strengths-block').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+});
