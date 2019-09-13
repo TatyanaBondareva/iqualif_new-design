@@ -1,6 +1,6 @@
 .description {
       &__img {
-        max-height: 385px;
+        height: 385px;
       }
 
       &__title {
@@ -37,13 +37,17 @@
     align-items: center;
   }
 
+  &_strengths {
+    margin-bottom: 250px;
+  }
+
   &_description {
-    margin-bottom: 130px;
+    margin-bottom: 132px;
   }
 
   &_background {
     background: url("../img/background-bottom.jpg") no-repeat;
-    padding-bottom: 45px;
+    padding-bottom: 68px;
     background-size: cover;
     margin-bottom: 110px;
   }
@@ -51,30 +55,32 @@
 
 .white-and-yellow {
   padding: 145px 0 65px;
-  position: relative;
+  display: flex;
+  justify-content: center;
   background: url(../img/mockaroon.svg);
+}
+
+.products {
+  position: relative;
+  display: flex;
+  padding: 0 0px;
+  justify-content: space-between;
 
   &:before {
     content: '';
     position: absolute;
-    top: -271px;
+    top: -416px;
     left: 50%;
     background: url(../img/polygon.png);
     background-size: 100%;
     width: 561px;
     height: 591px;
-    transform: translate(-50%, 0);
+    transform: translate(-61%, 0);
   }
 }
 
-.products {
-  display: flex;
-  padding: 0 0px;
-  justify-content: space-between;
-}
-
 .product {
-  width: 45%;
+  width: 37%;
   text-align: center;
 
   &__title {
@@ -105,7 +111,7 @@
     display: inline-block;
     line-height: 28px;
     text-decoration: none;
-    color: #ffff;
+    color: #FFFFFF;
     background-color: #FCC841;
     border: 3px solid;
     border-radius: 10px;
@@ -123,7 +129,7 @@
   align-items: center;
 
   &__title {
-    margin: 42px 0 50px;
+    margin: 43px 0;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
@@ -169,7 +175,7 @@
 }
 
 .extractor {
-  margin-bottom: 81px;
+  margin-bottom: 91px;
 
   &__text {
     font-size: 24px;
@@ -219,6 +225,7 @@
 
   &__os-icon {
     background-repeat: no-repeat;
+    background-size: 100%;
     &_windows {
       background-image: url(../img/windows.svg);
       width: 87px;
@@ -246,8 +253,15 @@
     padding: 11px 55px;
     background-color: #3BB7FD;
     border-radius: 10px;
-    color: #ffff;
+    color: #ffffff;
     margin-bottom: 38px;
+    border: 3px solid #ffffff;
+
+    &:hover {
+      color: #3BB7FD;
+      border: 3px solid #3BB7FD;
+      background-color: #FFFFFF;
+    }
   }
 
   &__small-text {
@@ -257,22 +271,25 @@
 }
 
 .container.content.support {
-  margin-bottom: 132px;
+  margin-bottom: 127px;
 }
 
 .description-product {
   text-align: justify;
-  padding: 0 375px;
+  padding: 0 245px 0 375px;
 
   &__list-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 
   &__list {
     margin: 32px 0;
-    padding: 0;
-    width: 45%;
+    padding: 0px 8px;
+    width: 41%;
+
+    &:first-child {
+      margin-right: 8.5%;
+    }
   }
 
   &__text {
@@ -302,26 +319,44 @@
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 26px;
+
+    &_one-line {
+      margin-bottom: 35px;
+    }
   }
 }
 
 .strengths-block {
   display: flex;
   width: 80%;
+  height: 100%;
+  padding-top: 18px;
+  margin-bottom: 155px;
   align-items: center;
 
   &__img {
+    width: 650px;
     padding: 0px 32px;
+    height: 650px;
+    object-fit: contain;
+  }
+
+  &__inner-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 44%;
   }
 
   &__inner {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   &__inner-title {
     font-weight: bold;
     font-size: 64px;
+    margin: 41px 0 0px;
     line-height: 75px;
     color: #3BB7FD;
   }
@@ -329,14 +364,25 @@
   &__inner-text {
     &_big {
     font-weight: bold;
-    font-size: 28px;
+      font-size: 36px;
+      margin: 35px 0 15px;
     line-height: 41px;
+    }
+
+    &_medium {
+      font-size: 24px;
+    }
+
+    &_small {
+      font-size: 18px;
+      color: #74889B;
+      margin: 13px 0 10px;
     }
   }
 
   &__description {
     align-self: center;
-    padding: 0 0 0 86px;
+    padding: 0 0 0 80px;
   }
 
   &__description-title {
@@ -348,8 +394,12 @@
 
   &__description-text {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__inner-img {
+    //margin-left: -2%;
   }
 }
 
@@ -367,9 +417,13 @@
 }
 .strengths-block__inner.slick-slide.slick-current {
   display: flex;
-  padding-top: 50px;
+  align-items: center;
   outline: none;
 }
 .strengths-block__inner.slick-slide.slick-cloned {
+  display: flex;
+  align-items: center;
+}
+.slick-initialized .slick-slide {
   display: flex;
 }
