@@ -71,4 +71,12 @@ $('.js-strengths-block').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
